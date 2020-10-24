@@ -15,6 +15,7 @@ import firebase from 'firebase/app/'
 
 
 
+
 const store = createStore(rootReducer,
   compose(
   applyMiddleware(thunk.withExtraArgument({getFirebase,getFirestore})),
