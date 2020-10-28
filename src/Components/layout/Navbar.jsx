@@ -8,19 +8,29 @@ const Navbar = (props) => {
     const {auth,profile} = props;
     const links = auth.uid ? <SignedInLink profile={profile}/> : <SignedOutLink/>
   return (
-   
-      <nav className="nav-wrapper deep-purple darken-4">
-        <div className="container">
-          <Link to="/" className="brand-logo">
-            MY REACT PROJECT
+      <div>
+        <nav className="nav-extended">
+      <div className="nav-wrapper deep-purple darken-4">
+        <div> 
+      <Link style={{marginLeft:"12px"}} to="/" className=" left brand-logo">
+            React Project
           </Link>
+          </div>
+        <div className="container ">
+          
+          
 
          {links}
         </div>
+      </div>
       </nav>
+     
+      </div>
+      
   
   );
 };
+
 
 const mapStateToProps = (state) => {
   console.log(state)

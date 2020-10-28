@@ -35,3 +35,26 @@ textarea.materialize-textarea:focus:not([readonly]){
 }
 
 
+
+
+@media (max-width:582px)
+{
+  nav-wrapper {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .right{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .nav-extended{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+}
+
+
