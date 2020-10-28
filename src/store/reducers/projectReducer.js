@@ -16,7 +16,13 @@ const initState = {
       return state;
      case "CREATE_PROJECT_ERROR":
        console.log("Create project error",action.err)
-       return state
+       return state;
+      case "DELETE_PROJECT":
+        console.log("project deleted")
+        return state;
+      case "DELETE_PROJECTERROR":
+        console.log("error in deleteing post")
+        return state;   
       default:  
       return state
    }

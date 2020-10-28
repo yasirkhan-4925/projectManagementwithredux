@@ -7,6 +7,7 @@ import ProjectDetails from './Components/projects/ProjectDetails'
 import SignIn from './Components/auth/SingIn'
 import SignUp from './Components/auth/SignUp'
 import CreateProject from './Components/projects/CreateProject'
+import MyProjects from './Components/projects/MyProjects'
 
 
 
@@ -18,6 +19,7 @@ function App() {
       <Switch>
         <Route  exact path="/" component={Dashboard} />
         <Route path="/project/:id" component={ProjectDetails} />
+        <Route path="/myprojects" component={MyProjects} />
         <Route path="/signin" component={SignIn} />
         <Route path="/signup" component={SignUp} />
         <Route path="/create" component={CreateProject} />
